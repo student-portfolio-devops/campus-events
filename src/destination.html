@@ -1,30 +1,249 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Destination Page</title>
-    <link rel="stylesheet" href="Styles.css">
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Destinations - Pakistan Tourism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="brand">Pakistan Tourism</div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
+    <!-- Destination Hero Section -->
+    <section class="destination-hero">
+      <div class="destination-hero-content">
+        <h1 class="destination-hero-title">Explore Destinations</h1>
+        <p class="destination-hero-subtitle">
+          Discover the most breathtaking and culturally rich destinations across
+          Pakistan
+        </p>
+      </div>
+    </section>
 
-<header class="header">
-    <h1>Explore Destinations</h1>
-</header>
-
-<div class="container">
-
-    <div class="card">
-        <img src="https://source.unsplash.com/400x250/?travel,nature" alt="Destination">
-        
-        <div class="card-content">
-            <h2>Beautiful Mountains</h2>
-            <p>Discover amazing travel places with nature and adventure.</p>
+    <!-- Destination Grid Section -->
+    <section class="destination-grid-section">
+      <div class="destination-grid-container">
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://source.unsplash.com/400x250/?mountain,pakistan"
+              alt="Northern Areas"
+            />
+          </div>
+          <div class="destination-card-content">
+            <h3>Northern Areas</h3>
+            <p>
+              Experience the majestic Himalayan peaks, pristine valleys, and
+              adventure activities.
+            </p>
+            <div class="destination-info">
+              <span class="best-season">🌸 Best: June - September</span>
+              <span class="difficulty">⛰️ Moderate</span>
+            </div>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
         </div>
 
-        <button>Visit Now</button>
-    </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://source.unsplash.com/400x250/?valley,nature"
+              alt="Hunza Valley"
+            />
+          </div>
+          <div class="destination-card-content">
+            <h3>Hunza Valley</h3>
+            <p>
+              Discover the picturesque valley known for its longevity and
+              stunning landscapes.
+            </p>
+            <div class="destination-info">
+              <span class="best-season">🌸 Best: April - October</span>
+              <span class="difficulty">⛰️ Easy</span>
+            </div>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
 
-</div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://source.unsplash.com/400x250/?desert,landscape"
+              alt="Sind"
+            />
+          </div>
+          <div class="destination-card-content">
+            <h3>Sind</h3>
+            <p>
+              Experience ancient deserts, historical monuments, and vibrant
+              Sindhi culture.
+            </p>
+            <div class="destination-info">
+              <span class="best-season">🌸 Best: November - March</span>
+              <span class="difficulty">⛰️ Easy</span>
+            </div>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
 
-</body>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://source.unsplash.com/400x250/?city,culture"
+              alt="Punjab"
+            />
+          </div>
+          <div class="destination-card-content">
+            <h3>Punjab</h3>
+            <p>
+              Explore the cultural heartland with magnificent Mughal
+              architecture and traditions.
+            </p>
+            <div class="destination-info">
+              <span class="best-season">🌸 Best: October - March</span>
+              <span class="difficulty">⛰️ Easy</span>
+            </div>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://source.unsplash.com/400x250/?coast,beach"
+              alt="Balochistan"
+            />
+          </div>
+          <div class="destination-card-content">
+            <h3>Balochistan</h3>
+            <p>
+              Discover rugged mountains, pristine coastlines, and untouched
+              wilderness.
+            </p>
+            <div class="destination-info">
+              <span class="best-season">🌸 Best: November - April</span>
+              <span class="difficulty">⛰️ Moderate</span>
+            </div>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://source.unsplash.com/400x250/?forest,nature"
+              alt="Kashmir"
+            />
+          </div>
+          <div class="destination-card-content">
+            <h3>Kashmir</h3>
+            <p>
+              Experience the breathtaking beauty of Paradise on Earth with
+              pristine nature.
+            </p>
+            <div class="destination-info">
+              <span class="best-season">🌸 Best: May - September</span>
+              <span class="difficulty">⛰️ Moderate</span>
+            </div>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destination Features Section -->
+    <section class="destination-features">
+      <div class="features-container">
+        <h2>What to Expect</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🏔️</div>
+            <h3>Scenic Landscapes</h3>
+            <p>
+              From towering peaks to serene valleys and beautiful coastlines.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🏛️</div>
+            <h3>Historical Sites</h3>
+            <p>
+              Ancient monuments and cultural heritage dating back thousands of
+              years.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">👥</div>
+            <h3>Local Culture</h3>
+            <p>
+              Authentic interactions with warm-hearted communities and
+              traditions.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🍽️</div>
+            <h3>Culinary Delights</h3>
+            <p>Savor authentic Pakistani cuisine and local specialties.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎒</div>
+            <h3>Adventure Activities</h3>
+            <p>Trekking, camping, mountaineering, and outdoor sports.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🌅</div>
+            <h3>Unforgettable Moments</h3>
+            <p>Create lifelong memories in extraordinary destinations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Ready to Start Your Adventure?</h2>
+        <p>Browse our packages or contact us for a custom itinerary</p>
+        <div class="cta-buttons">
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 Pakistan Tourism. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

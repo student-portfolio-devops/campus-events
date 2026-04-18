@@ -24,6 +24,7 @@
         </button>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="destination.html">Destinations</a></li>
           <li><a href="packages.html">Packages</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -166,39 +167,5 @@
         <p>&copy; 2024 Pakistan Tourism Portal. All rights reserved.</p>
       </div>
     </footer>
-
-    <script>
-      // Hamburger Menu Toggle
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("navLinks");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        hamburger.classList.toggle("active");
-      });
-
-      // Close menu when a link is clicked
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-          hamburger.classList.remove("active");
-        });
-      });
-
-      // Sticky navbar on scroll
-      let lastScrollTop = 0;
-      const navbar = document.querySelector(".navbar");
-
-      window.addEventListener("scroll", () => {
-        let scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > 100) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-        lastScrollTop = scrollTop;
-      });
-    </script>
   </body>
 </html>
