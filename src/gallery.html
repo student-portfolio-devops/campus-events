@@ -1,9 +1,243 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Gallery Page</title>
-</head>
-<body>
-    <h1>Campus Events Gallery</h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Pakistan Tourism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="brand">Pakistan Tourism</div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-content">
+        <h1 class="gallery-hero-title">Campus Events Gallery</h1>
+        <p class="gallery-hero-subtitle">
+          Explore the most beautiful moments captured from our travelers'
+          adventures
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Filter Section -->
+    <section class="gallery-filter-section">
+      <div class="gallery-filter-container">
+        <h2>Our Collections</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mountains">Mountains</button>
+          <button class="filter-btn" data-filter="culture">Culture</button>
+          <button class="filter-btn" data-filter="adventure">Adventure</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-item" data-category="mountains">
+          <img
+            src="https://source.unsplash.com/400x300/?mountain,himalaya"
+            alt="Mountain Peak"
+          />
+          <div class="gallery-overlay">
+            <h3>Mountain Peak</h3>
+            <p>Stunning views of the Himalayan mountains</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="adventure">
+          <img
+            src="https://source.unsplash.com/400x300/?trekking,adventure"
+            alt="Trekking Experience"
+          />
+          <div class="gallery-overlay">
+            <h3>Trekking Adventure</h3>
+            <p>Epic trekking expeditions in the north</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="culture">
+          <img
+            src="https://source.unsplash.com/400x300/?culture,tradition"
+            alt="Local Culture"
+          />
+          <div class="gallery-overlay">
+            <h3>Local Culture</h3>
+            <p>Authentic cultural experiences</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img
+            src="https://source.unsplash.com/400x300/?festival,celebration"
+            alt="Festival Celebration"
+          />
+          <div class="gallery-overlay">
+            <h3>Festival Celebration</h3>
+            <p>Vibrant celebrations with locals</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="mountains">
+          <img
+            src="https://source.unsplash.com/400x300/?valley,landscape"
+            alt="Valley Landscape"
+          />
+          <div class="gallery-overlay">
+            <h3>Valley Landscape</h3>
+            <p>Picturesque valleys and meadows</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="culture">
+          <img
+            src="https://source.unsplash.com/400x300/?architecture,heritage"
+            alt="Heritage Sites"
+          />
+          <div class="gallery-overlay">
+            <h3>Heritage Sites</h3>
+            <p>Ancient architecture and monuments</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="adventure">
+          <img
+            src="https://source.unsplash.com/400x300/?camping,outdoors"
+            alt="Camping Experience"
+          />
+          <div class="gallery-overlay">
+            <h3>Camping Under Stars</h3>
+            <p>Unforgettable camping experiences</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img
+            src="https://source.unsplash.com/400x300/?gathering,people"
+            alt="Group Events"
+          />
+          <div class="gallery-overlay">
+            <h3>Group Adventures</h3>
+            <p>Amazing moments with travel groups</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="mountains">
+          <img
+            src="https://source.unsplash.com/400x300/?snowpeak,mountain"
+            alt="Snow Peak"
+          />
+          <div class="gallery-overlay">
+            <h3>Snowy Peaks</h3>
+            <p>Winter wonderland in the mountains</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="culture">
+          <img
+            src="https://source.unsplash.com/400x300/?food,cuisine"
+            alt="Local Cuisine"
+          />
+          <div class="gallery-overlay">
+            <h3>Local Cuisine</h3>
+            <p>Delicious traditional Pakistani food</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="adventure">
+          <img
+            src="https://source.unsplash.com/400x300/?hiking,trail"
+            alt="Hiking Trail"
+          />
+          <div class="gallery-overlay">
+            <h3>Hiking Trails</h3>
+            <p>Scenic hiking paths and routes</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img
+            src="https://source.unsplash.com/400x300/?sunset,nature"
+            alt="Sunset Views"
+          />
+          <div class="gallery-overlay">
+            <h3>Golden Sunsets</h3>
+            <p>Breathtaking sunset moments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Stats Section -->
+    <section class="gallery-stats">
+      <div class="gallery-stats-container">
+        <div class="stat-card">
+          <h3>5,000+</h3>
+          <p>Photos Captured</p>
+        </div>
+        <div class="stat-card">
+          <h3>500+</h3>
+          <p>Happy Travelers</p>
+        </div>
+        <div class="stat-card">
+          <h3>50+</h3>
+          <p>Destinations</p>
+        </div>
+        <div class="stat-card">
+          <h3>100+</h3>
+          <p>Events</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share Experience Section -->
+    <section class="share-experience">
+      <div class="share-container">
+        <h2>Share Your Experience</h2>
+        <p>
+          Have amazing travel photos? We'd love to feature them in our gallery!
+        </p>
+        <a href="contact.html" class="btn btn-primary">Submit Your Photos</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 Pakistan Tourism. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
